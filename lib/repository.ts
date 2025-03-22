@@ -37,6 +37,7 @@ export async function getCarById(id: number) {
  */
 async function getAllCars() {
   const cachedAllCars = unstable_cache(async () => {
+    console.log("DANGER: getAllCars is invoked.");
     return {
       items: data.classic_cars,
       allCarsReadTime: now(),
@@ -47,7 +48,7 @@ async function getAllCars() {
 }
 
 
-function now(): string {
+export function now(): string {
   const date = new Date();
   // mm:ss
   return `${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;

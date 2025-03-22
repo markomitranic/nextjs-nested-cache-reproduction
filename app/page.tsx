@@ -12,7 +12,7 @@ export default async function Home() {
       <p>App Router - Pages:</p>
       <ul>
         <li>
-          <Link href="/static">automatic render mode</Link>
+          <Link href="/automatic">automatic render mode</Link>
         </li>
         <li>
           <Link href="/static">force-static</Link>
