@@ -1,3 +1,21 @@
+# Next.js Nested Cache reproduction
+
+How to use:
+```bash
+npm i
+npm run build
+npm run start
+```
+
+Between each test, remember to clear the local cache:
+```bash
+rm -rf .next/cache/ && npm run build && npm run start
+```
+
+Navigate to http://localhost:3000 for directions.
+
+---
+
 This is a [Next.js](https://nextjs.org/) template to use when reporting a [bug in the Next.js repository](https://github.com/vercel/next.js/issues) with the `app/` directory.
 
 ## Getting Started
